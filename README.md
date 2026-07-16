@@ -46,7 +46,7 @@ A professional Discord bot for managing Docker-based VPS instances via slash com
 
 ```bash
 git clone https://github.com/atifqmi-max/vpsbot-v2/
-cd discord-bot
+cd vpsbot-v2
 ```
 
 ### 2 — Create a virtual environment
@@ -120,7 +120,7 @@ systemctl start stonenodes
 systemctl status stonenodes
 
 # View live logs
-sudo journalctl -u blinedcloud -f
+sudo journalctl -u stonenodes -f
 ```
 
 ---
