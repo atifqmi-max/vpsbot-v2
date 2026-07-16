@@ -45,7 +45,7 @@ A professional Discord bot for managing Docker-based VPS instances via slash com
 ### 1 — Clone the repository
 
 ```bash
-git clone https://github.com/krishdeep0009-glitch/discord-bot.git
+git clone https://github.com/atifqmi-max/vpsbot-v2/
 cd discord-bot
 ```
 
@@ -79,7 +79,7 @@ ADMIN_ROLE_ID=123456789012345678
 ### 5 — Run the bot
 
 ```bash
-python blinedcloud_bot.py
+python stonenodes_bot.py
 ```
 
 ---
