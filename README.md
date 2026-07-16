@@ -92,21 +92,20 @@ sudo nano /etc/systemd/system/blinedcloud.service
 
 Paste this (replace `YOUR_LINUX_USER`):
 
-```ini
-[Unit]
-Description=Blined Cloud VPS Manager Bot
+```[Unit]
+Description=StoneNodes VPS Manager
 After=network.target docker.service
 Requires=docker.service
 
 [Service]
 Type=simple
-User=YOUR_LINUX_USER
-WorkingDirectory=/home/YOUR_LINUX_USER/discord-bot
-ExecStart=/home/YOUR_LINUX_USER/discord-bot/venv/bin/python blinedcloud_bot.py
+User=root
+WorkingDirectory=/root/vpsbot-v2
+ExecStart=/root/vpsbot-v2/venv/bin/python /root/vpsbot-v2/stonenodes_bot.py
 Restart=always
 RestartSec=5
-StandardOutput=journal
-StandardError=journal
+
+Environment=PYTHONUNBUFFERED=1
 
 [Install]
 WantedBy=multi-user.target
@@ -115,9 +114,10 @@ WantedBy=multi-user.target
 Enable and start:
 
 ```bash
-sudo systemctl daemon-reload
-sudo systemctl enable blinedcloud
-sudo systemctl start blinedcloud
+systemctl daemon-reload
+systemctl enable stonenodes
+systemctl start stonenodes
+systemctl status stonenodes
 
 # View live logs
 sudo journalctl -u blinedcloud -f
