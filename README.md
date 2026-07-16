@@ -1,4 +1,4 @@
-# 🌩️ Blined Cloud VPS Manager
+# 🌩️ StoneNodes VPS Manager
 
 A professional Discord bot for managing Docker-based VPS instances via slash commands — powered by **tmate** for instant terminal access.
 
