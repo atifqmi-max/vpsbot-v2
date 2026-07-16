@@ -87,7 +87,7 @@ python stonenodes_bot.py
 ## 🔧 Run as a systemd Service (keep alive on VPS)
 
 ```bash
-sudo nano /etc/systemd/system/blinedcloud.service
+nano /etc/systemd/system/stonenodes.service
 ```
 
 Paste this (replace `YOUR_LINUX_USER`):
